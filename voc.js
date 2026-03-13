@@ -3,9 +3,9 @@ function filterWords() {
     let cards = document.getElementsByClassName('vocab-card');
 
     for (let i = 0; i < cards.length; i++) {
-        let word = cards[i].querySelector('h2').innerText.toLowerCase();
+        let wordContent = cards[i].innerText.toLowerCase();
         
-        if (word.includes(input)) {
+        if (wordContent.includes(input)) {
             cards[i].style.display = "";
         } else {
             cards[i].style.display = "none";
@@ -19,6 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     allCards.forEach(card => {
         card.addEventListener('click', function() {
+            const openCard = document.querySelector('.vocab-card.is-flipped');
+
+            if (openCard && openCard !== this) {
+                openCard.classList.remove('is-flipped');
+            }
+
             this.classList.toggle('is-flipped');
         });
     });

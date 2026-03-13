@@ -1,2 +1,4 @@
 User-agent: *
-Sitemap:  https://meshalomaysh-cloud.github.io/stepexamamination/
+Allow: /
+
+Sitemap: https://meshalomaysh-cloud.github.io/step/sitemap.xml

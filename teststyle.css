@@ -1,0 +1,141 @@
+body{
+    background-color: #001e4d;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.app{
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 1px 10px 10px;
+}
+.app h1{
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+.quiz{
+    padding: 20px 0;
+}
+.quiz h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+.btn{
+    background-color: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor:pointer;
+    transition: all 0.3s;
+}
+.btn:hover:not([disabled]){
+    color: #fff;
+    background-color: #222;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+#next-btn{
+    background-color: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #007ea7;
+    transition: width 0.3s ease;
+}
+#timer {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #001e4d;
+    text-align: right;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+.selected {
+    background-color: #003459 !important;
+    color: white !important;
+    border: 2px solid #003459;
+}
+.mistakes-container {
+    text-align: left;
+    max-height: 350px;
+    overflow-y: auto;
+    margin-top: 20px;
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.mistake-item {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.mistake-item hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin-top: 10px;
+}
+#audio-container {
+    display: block !important;
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+audio {
+    width: 100%;
+    height: 54px;
+}
+#reading-text {
+    background-color: #f9f9f9;
+    border-left: 5px solid #001e4d;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #333;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#reading-text:empty {
+    display: none;
+}
